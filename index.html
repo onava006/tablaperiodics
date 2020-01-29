@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="table"></div>   
+    <div id="table2"></div> 
+<script>
+    function maketable(array,string){
+        var elements = {1:['<div class="element blue"><p>'],
+                        2:'<div class="element yellow"><p>',
+                        3:'<div class="element red"><p>',
+                        4:'<div class="element green"><p>'};
+        var collection = "";
+        
+        var periodictable = {1:['H',1.008],2:['He',4.0026],3:['Li',6.94],4:['Be',9.0122],5:['B',10.81],6:['C',12.011],7:['N',14.007],8:['O',15.999],9:['F',10.81],10:['Ne',20.180],11:['Na',22.990],12:['Mg',22.990],13:['Al',22.990],14:['Si',22.990],15:['P',22.990],16:['S',22.990],17:['Cl',22.990],18:['Ar',22.990],19:['K',22.990],20:['Ca',22.990],21:['Sc',22.990],22:['Ti',22.990],23:['V',22.990],24:['Cr',22.990],25:['Mn',22.990],26:['Fe',22.990],27:['Co',22.990],28:['Ni',22.990],29:['Cu',22.990],30:['Zn',22.990],31:['Ga',22.990],32:['Ge',22.990],33:['As',22.990],34:['Se',22.990],35:['Br',22.990],36:['Kr',22.990],37:['Rb',22.990],38:['Sr',22.990],39:['Y',22.990],40:['Zr',22.990],41:['Nb',22.990],42:['Mo',22.990],43:['Tc',22.990],44:['Ru',22.990],45:['Rh',22.990],46:['Pd',22.990],47:['Ag',22.990],48:['Cd',22.990],49:['In',22.990],50:['Sn',22.990],51:['Sb',22.990],52:['Te',22.990],53:['I',22.990],54:['Xe',22.990],55:['Cs',22.990],56:['Ba',22.990],57:['Lu',22.990],58:['Hf',22.990],59:['Ta',22.990],60:['W',22.990],61:['Re',22.990],62:['Os',22.990],63:['Ir',22.990],64:['Pt',22.990],65:['Au',22.990],66:['Hg',22.990],67:['Tl',22.990],68:['Pb',22.990],69:['Bi',22.990],70:['Po',22.990],71:['Rn',22.990],72:['Fr',22.990],73:['Ra',22.990],74:['Lr',22.990],75:['Rf',22.990],76:['Db',22.990],77:['Sg',22.990],78:['Bh',22.990],79:['Hs',22.990],80:['Mt',22.990],81:['Ds',22.990],82:['Rg',22.990],83:['Cn',22.990],84:['Uut',22.990],85:['Fl',22.990],86:['Uup',22.990],87:['Lv',22.990],88:['Uus',22.990],89:['Na',22.990],90:['Na',22.990],91:['Na',22.990],92:['Na',22.990],93:['Na',22.990],94:['Na',22.990],95:['Na',22.990],96:['Na',22.990],97:['Na',22.990],98:['Na',22.990],99:['Na',22.990],100:['Na',22.990],101:['Na',22.990],102:['Na',22.990],103:['Na',22.990],104:['Na',22.990],105:['Na',22.990],106:['Na',22.990],107:['Na',22.990],108:['Na',22.990],109:['Na',22.990],110:['Na',22.990],111:['Na',22.990],112:['Na',22.990],113:['Na',22.990],114:['Na',22.990],115:['Na',22.990],116:['Na',22.990],117:['Na',22.990],118:['Na',22.990]};
+        
+        for(var i = 0; i < array.length; i++){
+            if([array[i]]>0){
+                atomicnumber++;
+                console.log(atomicnumber);
+                collection += elements[array[i]]+atomicnumber+'</p><p>'+periodictable[atomicnumber][0]+'</p><p>'+periodictable[atomicnumber][1]+'</p></div>';
+            }
+            else{
+                collection +='<div class="empty"><p></p><p></p><p></p></div>';
+            }            
+        }
+        document.getElementById(string).innerHTML += collection;
+    }
+        var atomicnumber = 0;
+        var bluelist = [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,
+                        1,1,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,
+                        1,1,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,
+                        1,1,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,
+                        1,1,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2];
+        var prelantanids = [1,1];
+        var lantanids = [4,4,4,4,4,4,4,4,4,4,4,4,4,4];                        
+        var secondlist = [3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2];
+        var thirdlist = [3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2];
+        var preactinids = [1,1];
+        var actinids =  [4,4,4,4,4,4,4,4,4,4,4,4,4,4];
+        maketable(bluelist,"table");
+        maketable(prelantanids,"table");
+        maketable(lantanids,"table2");
+        maketable(secondlist,"table");
+        maketable(preactinids,"table");
+        maketable(actinids,"table2");
+        maketable(thirdlist,"table");        
+</script>
+</body>
+</html>

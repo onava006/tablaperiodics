@@ -1,0 +1,49 @@
+p{
+    margin-top: 1px;
+    margin-bottom: 1px;
+    color: white;
+    text-align: center;
+}
+div.empty{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin: 2px;
+    margin-bottom: -4px;
+    
+    border: 1px solid white;
+}
+div.element{
+    width: 60px;
+    height: 60px;     
+    border: 1px solid black;
+    display: inline-block;
+    margin: 2px;
+}
+#table{
+    width: 1200px;
+    display: inline-block;
+}
+#table2{
+    width: 950px;
+}
+div.blue{
+    display: inline-block;
+    vertical-align: top;
+    background-color: blue;
+}
+div.red{
+    display: inline-block;
+    vertical-align: top;
+    background-color: red;
+}
+div.yellow{
+    display: inline-block;
+    vertical-align: top;
+    background-color: yellow;
+}
+div.green{
+    display: inline-block;
+    vertical-align: top;
+    background-color: green;
+}

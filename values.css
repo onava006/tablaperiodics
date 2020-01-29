@@ -1,0 +1,46 @@
+#blue{
+    width: 150px;
+    display: inline-block;
+    
+}
+#blue div.ele{
+    background-color: blue;
+}
+#red{
+    width: 700px;
+    display: inline-block;
+}
+#red div.ele{
+    background-color: red;
+}
+#yellow{
+    width: 250px;
+    display: inline-block;
+}
+#yellow div.ele{
+    background-color: yellow;
+}
+#green{
+    width: 700px;
+    margin-top: 50px;
+}
+#green div.category{
+    display: inline-block;
+    width: 100px;
+}
+div.ele{
+    margin: 2px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid purple;
+    display: inline-block;
+    
+}
+div.empty{
+    margin: 2px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid gray;
+    display: inline-block;
+    background-color: white;
+}
